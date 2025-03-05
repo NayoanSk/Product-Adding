@@ -67,8 +67,8 @@ formProduct.addEventListener("submit", (e)=>{
         let{id, title, price, discount, description, productUrl, productDetails} = productAll[i];
         let changeTitle = title.toLowerCase();
         let titleIncludes = changeTitle.includes(changeText);
-        //titleIncludes
-        if(price > 200){
+        //price > 200
+        if(titleIncludes){
             let proMainDiv = document.getElementById("proMainDiv")
             proMainDiv.innerHTML += productCard(productAll[i]);
         }
