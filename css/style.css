@@ -17,14 +17,33 @@ h1{
     width: 300px;
     border: 1px solid gray;
 }
+.productMain2{
+    margin: 10px auto;
+    width: 300px;
+    border: 1px solid gray;
+}
 #formProduct input{
     padding: 10px;
     outline: none;
     border: none;
 }
+#formProduct2 input{
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: rgb(228, 239, 133);
+}
 #searchBtn{
     padding: 10px;
     background: red;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+}
+#searchBtn2{
+    padding: 10px;
+    background: rgb(137, 127, 221);
     color: #fff;
     cursor: pointer;
     border: none;
@@ -37,7 +56,20 @@ h1{
     flex-wrap: wrap;
     gap: 10px;
 }
+#proMainDiv2{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 #productCard {
+    width: 18%;
+    border: 1px solid grey;
+    padding: 10px;
+    background: rgb(181, 169, 169);
+}
+#productCard2 {
     width: 18%;
     border: 1px solid grey;
     padding: 10px;
@@ -47,10 +79,23 @@ h1{
     width: 100%;
     display: block;
 }
+#productCard2  img{
+    width: 100%;
+    display: block;
+}
 #productCard  h2{
     font-size: 20px;
 }
+#productCard2  h2{
+    font-size: 20px;
+}
 #productCard a button{
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#productCard2 a button{
     width: 100%;
     padding: 5px;
     cursor: pointer;

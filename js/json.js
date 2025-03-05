@@ -1,5 +1,4 @@
-
-let productAll = [
+let productAlls = [
     {
         id : "12A3",
         title : "Haier 8 KG Front Loading Washing Machine/525",
@@ -56,50 +55,27 @@ let productAll = [
     }
 ];
 /*
-let formProduct = document.getElementById("formProduct");
-formProduct.addEventListener("submit", (e)=>{
+let formProduct2 = document.getElementById("formProduct2");
+formProduct2.addEventListener("submit",(e)=>{
     e.preventDefault();
-    let searchProd = e.target.searchProd.value;
-    let changeText = searchProd.toLowerCase();
-    e.target.searchProd.value = "";
+    let searchProd2 = e.target.searchProd2.value;
+    let inputTextChange = searchProd2.toLowerCase();
+    e.target.searchProd2.value = "";
+    let takeprod = productAlls.filter((value)=>{
+        let changeTitles = value.title.toLowerCase();
+        return changeTitles.includes(inputTextChange);
+    });
+
+    let proMainDiv2 = document.getElementById("proMainDiv2");
+    takeprod.forEach((values)=>{
+        proMainDiv2.innerHTML += prodCard(values);
+    })
     
-    for(i = 0; i < productAll.length; i++){
-        let{id, title, price, discount, description, productUrl, productDetails} = productAll[i];
-        let changeTitle = title.toLowerCase();
-        let titleIncludes = changeTitle.includes(changeText);
-        //price > 200
-        if(titleIncludes){
-            let proMainDiv = document.getElementById("proMainDiv")
-            proMainDiv.innerHTML += productCard(productAll[i]);
-        }
-    }
-});*/
-
-
-let formProduct = document.getElementById("formProduct");
-formProduct.addEventListener("submit", (e)=>{
-    e.preventDefault();
-    let searchProd = e.target.searchProd.value;
-    let changeText = searchProd.toLowerCase();
-    e.target.searchProd.value = "";
-    let AllProduct = productAll.filter((value)=>{
-        let prodtitle = value.title;
-        let changeTitle = prodtitle.toLowerCase();
-        return changeTitle.includes(changeText);
-    });
-
-    let proMainDiv = document.getElementById("proMainDiv");
-    AllProduct.forEach((values)=>{
-        let prodCaredss = productCard(values);
-        proMainDiv.innerHTML += prodCaredss;
-    });
-
 });
-
-function productCard(infoProd){
-    let {id, title, price, discount, description, productUrl, productDetails} = infoProd;
-    let htmlcode = `
-    <div id="productCard">
+function prodCard(proAll){
+    let {id, title, price, discount, description, productUrl, productDetails} = proAll;
+    let htmlCode = `
+    <div id="productCard2">
         <img src="${productUrl}" alt="">
         <h2>${title.length > 20 ? title.slice(0, 20) + "...." : title}</h2>
         <h3>$${price}</h3>
@@ -109,6 +85,6 @@ function productCard(infoProd){
         <a href="${productDetails}" target="_blank"><button>Details</button></a>
     </div>
     `;
-    return htmlcode;
+    return htmlCode;
 }
-
+*/
