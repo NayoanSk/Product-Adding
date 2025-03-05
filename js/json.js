@@ -54,7 +54,9 @@ let productAlls = [
         productDetails : "https://www.daraz.com.bd/products/gree-gs-18xpuv32-15-i505220714-s2437292453.html?scm=1007.51610.379274.0&pvid=1233f729-bef0-4648-aba9-4a1cc0e2d3d8&search=flashsale&spm=a2a0e.tm80335411.FlashSale.d_505220714"
     }
 ];
-/*
+// let convertJson = JSON.stringify(productAlls); 
+// console.log(JSON.parse(convertJson));
+
 let formProduct2 = document.getElementById("formProduct2");
 formProduct2.addEventListener("submit",(e)=>{
     e.preventDefault();
@@ -87,4 +89,4 @@ function prodCard(proAll){
     `;
     return htmlCode;
 }
-*/
+
