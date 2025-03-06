@@ -1,0 +1,32 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style-type: none;
+}
+h1{
+    color: rgb(134, 113, 113);
+    margin-bottom: 10px;
+}
+#flagMainDiv{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.flagDiv{
+    width: 180px;
+    border: 1px solid grey;
+    padding: 10px;
+    background: rgb(242, 223, 223);
+}
+.flagDiv img{
+    width: 100%;
+    display: block;
+}
